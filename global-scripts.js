@@ -23,6 +23,9 @@ function getSelections(elementId) {
 	if(selections.length == 0) {
 		out = undefined
 	}
+	else if(selections[0].value == "") {
+		out = undefined
+	}
 	else {
 		out = selections.map(function(a) {return a.value})
 	}

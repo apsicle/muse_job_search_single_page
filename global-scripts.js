@@ -16,17 +16,27 @@ function search(filters) {
 	return results;
 }
 
+function getSelections(elementId) {
+	//takes selectionOptions from a multi select dropdown menu, and extracts the selected value strings
+	//and puts them into an array
+	var selections = Array.from(document.getElementById(elementId).selectedOptions)
+	if(selections.length == 0) {
+		out = undefined
+	}
+	else {
+		out = selections.map(function(a) {return a.value})
+	}
+	return out
+}
+
 function loadResults(page_number) {
 	//Grab the values from the filters
-	var page = page_number || 1
-	var company = document.getElementById('company-menu').value;
-	if (company == "") {company = undefined}
-	var category = document.getElementById('category-menu').value;
-	if (category == "") {category = undefined}
-	var location = document.getElementById('location-menu').value;
-	if (location == "") {location = undefined}
-	var level = document.getElementById('level-menu').value;
-	if (level == "") {level = undefined}
+	var page = page_number || 0
+	var company = getSelections('company-menu')
+	var category = getSelections('category-menu')
+	var location = getSelections('location-menu')
+	var level = getSelections('level-menu')
+
 	var filters = {"page": page, "company": company, "category": category, "location": location, "level": level};
 	var results = search(filters)
 
@@ -101,9 +111,18 @@ function loadResults(page_number) {
 	// Show pages for results
 	page_number_container = document.getElementById("page-numbers-container")
 	page_number_container.innerHTML = null
+	number_results_container = document.getElementById("number-results-container")
+	number_results_container.innerHTML = null
 
 	var current_page_num = parseInt(results.page)
-	var max_page_num = parseInt(results.page_count)
+	var max_page_num = parseInt(results.page_count) - 1
+	var total_hits = parseInt(results.total)
+
+	//Tell user how many jobs were found
+	current_hit = (current_page_num)*20 + 1
+	through_hit = current_hit + 19
+	number_results_container.innerHTML = 
+	'Showing hits ' + String(current_hit) + "- " + String(through_hit) + " of " + String(total_hits) + " jobs!"
 
 	//Create the page buttons
 	//First page
@@ -111,7 +130,7 @@ function loadResults(page_number) {
 	first_page.setAttribute('class', "page-number")
 	first_page.innerHTML = 'First'
 	first_page.addEventListener('click', function(){
-    	loadResults(1);
+    	loadResults(0);
 	});
 	page_number_container.appendChild(first_page);
 
@@ -120,7 +139,7 @@ function loadResults(page_number) {
 	previous_page.setAttribute('class', "page-number")
 	previous_page.innerHTML = 'Previous'
 	previous_page.addEventListener('click', function(){
-    	loadResults(Math.max(1, current_page_num - 1));
+    	loadResults(Math.max(0, current_page_num - 1));
 	});
 	page_number_container.appendChild(previous_page);
 
@@ -129,7 +148,7 @@ function loadResults(page_number) {
 	next_page.setAttribute('class', "page-number")
 	next_page.innerHTML = 'Next'
 	next_page.addEventListener('click', function(){
-    	loadResults(Math.min(99, max_page_num - 1, current_page_num + 1));
+    	loadResults(Math.min(99, max_page_num, current_page_num + 1));
 	});
 	page_number_container.appendChild(next_page);
 
@@ -138,7 +157,7 @@ function loadResults(page_number) {
 	last_page.setAttribute('class', "page-number")
 	last_page.innerHTML = 'Last'
 	last_page.addEventListener('click', function(){
-    	loadResults(Math.min(99, Math.max(1, max_page_num - 1)));
+    	loadResults(Math.min(99, Math.max(0, max_page_num)));
 	});
 	page_number_container.appendChild(last_page);
 }

@@ -11,21 +11,13 @@
 <body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script src="chosen-js/chosen.jquery.js"></script>
-	<script> 
-		$( document ).ready(function() {
-			//Activate chosen menus
-	        $('.html-multi-chosen-select').chosen({ width: "210px" });
-	        //So multiple selections are formatted properly in AJAX requests
-	        $.ajaxSetup({traditional: true})
-		}); 
-	</script>
-	<script src='global-scripts.js'></script>
+	<script src="global-scripts.js"></script>
 	<script>
 
     </script>
 	<div class="navbar-container">
 		<ul class="topnav" id="main-topnav">
-			<li><a href="#">Search Jobs</a></li>
+			<li><a href="#">Home</a></li>
 		</ul>
 	</div>
 
@@ -37,7 +29,7 @@
 		<div class="all-menu-container">
 			<div class="menu-container">
 				<p>Company:</p>
-				<select id="company-menu" class="html-multi-chosen-select" multiple="multiple">
+				<select class="menu" id="company-menu" type="text" multiple name="company">
 					<option value="">All Companies</option>
 
 					<option value="HealthcareSource">HealthcareSource</option>
@@ -1433,7 +1425,7 @@
 
 			<div class="menu-container">
 				<p>Category:</p>
-				<select  id="category-menu" class="html-multi-chosen-select" multiple="multiple">
+				<select class="menu" id="category-menu" type="text" multiple name="category">
 					<option value="">All Categories</option>
 					<option value="Account Management">Account Management</option>
 					<option value="Business &amp; Strategy">Business &amp; Strategy</option>
@@ -1463,7 +1455,7 @@
 
 			<div class="menu-container">
 				<p>Level:</p>
-				<select id="level-menu" class="html-multi-chosen-select" multiple="multiple">
+				<select class="menu" id="level-menu" type="text" multiple name="level">
 					<option value="">All Levels</option>
 					<option value="Internship">Internship</option>
 					<option value="Entry Level">Entry Level</option>
@@ -1474,7 +1466,7 @@
 
 			<div class="menu-container">
 				<p>Location:</p>
-				<select id="location-menu" class="html-multi-chosen-select" multiple="multiple">
+				<select class="menu" id="location-menu" type="text" name="location">
 					<option value="">All Locations</option>
 					<option value="Flexible / Remote">Flexible / Remote</option>
 					<option value="Accra, Ghana">Accra, Ghana</option>
@@ -2138,9 +2130,6 @@
 		
 
 		<div id="page-numbers-container">
-		</div>
-
-		<div id="number-results-container">
 		</div>
 
 		<table id="search-results-table">

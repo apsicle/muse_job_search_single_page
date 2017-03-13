@@ -1,0 +1,91 @@
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Account Management" id="Account Management" value="Account Management"><label for="Account Management">Account Management</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Business &amp; Strategy" id="Business &amp; Strategy" value="Business &amp; Strategy"><label for="Business &amp; Strategy">Business &amp; Strategy</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Creative &amp; Design" id="Creative &amp; Design" value="Creative &amp; Design"><label for="Creative &amp; Design">Creative &amp; Design</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="customer service" id="customer service" value="customer service"><label for="customer service">customer service</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Customer Service" id="Customer Service" value="Customer Service"><label for="Customer Service">Customer Service</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Data Science" id="Data Science" value="Data Science"><label for="Data Science">Data Science</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Editorial" id="Editorial" value="Editorial"><label for="Editorial">Editorial</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Education" id="Education" value="Education"><label for="Education">Education</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Engineering" id="Engineering" value="Engineering"><label for="Engineering">Engineering</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Finance" id="Finance" value="Finance"><label for="Finance">Finance</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Fundraising &amp; Development" id="Fundraising &amp; Development" value="Fundraising &amp; Development"><label for="Fundraising &amp; Development">Fundraising &amp; Development</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Healthcare &amp; Medicine" id="Healthcare &amp; Medicine" value="Healthcare &amp; Medicine"><label for="Healthcare &amp; Medicine">Healthcare &amp; Medicine</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="HR &amp; Recruiting" id="HR &amp; Recruiting" value="HR &amp; Recruiting"><label for="HR &amp; Recruiting">HR &amp; Recruiting</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="human resources" id="human resources" value="human resources"><label for="human resources">human resources</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Legal" id="Legal" value="Legal"><label for="Legal">Legal</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Marketing &amp; PR" id="Marketing &amp; PR" value="Marketing &amp; PR"><label for="Marketing &amp; PR">Marketing &amp; PR</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Operations" id="Operations" value="Operations"><label for="Operations">Operations</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Part Time" id="Part Time" value="Part Time"><label for="Part Time">Part Time</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Project &amp; Product Management" id="Project &amp; Product Management" value="Project &amp; Product Management"><label for="Project &amp; Product Management">Project &amp; Product Management</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="receptionist" id="receptionist" value="receptionist"><label for="receptionist">receptionist</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Retail" id="Retail" value="Retail"><label for="Retail">Retail</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Sales" id="Sales" value="Sales"><label for="Sales">Sales</label>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<input type="checkbox" name="Social Media &amp; Community" id="Social Media &amp; Community" value="Social Media &amp; Community"><label for="Social Media &amp; Community">Social Media &amp; Community</label>
+</div>

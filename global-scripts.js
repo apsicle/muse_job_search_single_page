@@ -5,7 +5,7 @@ function search(filters) {
 			type: 'GET',
 			url: 'https://api-v2.themuse.com/jobs',
 			data: filters,
-			async: false,
+			async: false, //wait on results to be retrieved
 			success: function(response) {
 				results = response
 			},
@@ -65,7 +65,7 @@ function loadResults(page_number) {
 
 	//Populate the table with the results
 	for(var index in results.results) {
-		//Wrap in closure so listing is not reevaluated on click.
+		//Wrap in closure so listing value is stored with each new index.
 		(function(listing) {
 			var row = document.createElement('tr');
 			
